@@ -9,6 +9,7 @@
     --main-bg-color: #43affc;
     --text-color1: #34abff;
     --text-color2: #3a3a3a;
+    --text-color3: #707070;
     --background1: #fff;
     --background2: #363636;
 }
@@ -66,10 +67,11 @@
     letter-spacing: 3px;
 }
 .date {
-    color: var(--text-color2);
-    font-family: "Orbitron", sans-serif;
+    color: var(--text-color3);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin-top: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 @media (max-width: 768px) {
     .main-container {
