@@ -7,33 +7,38 @@
 
 :root {
     --main-bg-color: #43affc;
-    --text-color1: #43affc;
+    --text-color1: #34abff;
     --text-color2: #3a3a3a;
     --background1: #fff;
     --background2: #363636;
 }
 
 .main-container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--main-bg-color);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
+.row {
+    display: flex;
+}
 .box {
-    height: 25vh;
+    /* height: 100; */
     width: 40vw;
-    box-shadow: -4px -3px 45px 5px rgba(0, 0, 0, 0.301);
-    border: 1px solid #363636;
-    border-radius: 20px 0px;
-    margin: 60px 20px;
+    margin: 40px 30px 0 30px;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    box-shadow: -4px -3px 45px 5px rgba(0, 0, 0, 0.301);
+    border-radius: 30px;
+    box-sizing: border-box;
+    
     background-color: var(--background1);
     color: var(--text-color1);
     font-size: 30px;
@@ -58,8 +63,26 @@
     color: var(--text-color2);
     font-family: "Orbitron", sans-serif;
     margin-top: 10px;
+    letter-spacing: 3px;
 }
-
-@media (max-width: 600px) {
-
+.date {
+    color: var(--text-color2);
+    font-family: "Orbitron", sans-serif;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+@media (max-width: 768px) {
+    .main-container {
+        height: 100%;
+        padding-top: 12vh;
+    }
+    .row{
+        flex-direction: column;
+        width: 90%;
+    }
+    .box{
+        box-sizing: border-box;
+        margin: 20px 0px;
+        width: 100%;
+    }
 }
