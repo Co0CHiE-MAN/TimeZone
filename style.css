@@ -114,4 +114,10 @@
         margin: 20px 0px;
         width: 100%;
     }
+    .timeDate {
+        width: 75%;
+    }
+    .weather {
+        width: 25%;
+    }
 }
