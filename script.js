@@ -43,6 +43,8 @@ const requestApi = (city, country, divId) => {
 const weatherDetails = (info,divId) => {
     let tempCelcius = info.main.temp - 273.15  
     document.getElementById(divId).innerText = `${Math.round(tempCelcius)}°C`;
+    document.getElementById(`${divId}image`).src=`icons/${info.weather[0].icon}.svg`;
+    // console.log(info.weather[0].icon)
 }
 const weatherLoop = (cities) => {
     for (num in cities) {
