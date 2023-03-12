@@ -65,7 +65,7 @@
     font-family: 'Oswald', sans-serif;
     color: var(--text-color2);
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,6 +87,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    text-transform: capitalize;
+    color: var(--text-color2);
 }
 .bottomCont {
     width: 100%;
@@ -117,7 +119,7 @@
     letter-spacing: 3px;
 }
 .date {
-    color: var(--text-color3);
+    color: var(--text-color2);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 10px;
@@ -138,9 +140,15 @@
         width: 100%;
     }
     .timeDate {
-        width: 75%;
+        width: 100%;
     }
     .weather {
-        width: 25%;
+        width: 100%;
+    } 
+    .bottomCont {
+        flex-direction: column;
+    }
+    .tempNicon{
+        width: 100%;
     }
 }
